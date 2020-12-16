@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* load page */
+.loadWrapper {
+    width: 350px;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.red {
+    color: red;
+}
+
+p {
+    margin: 0 0 50px 0;
+    font-size: 24px;
+}
+
+.setDimensions {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+input {
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    margin: 0 0 20px 0;
+    
+}
+
+input:focus {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px 0;
+    color: rgba(11, 16, 35, 1);
+    font-size: 22px;
+    font-weight: bold;
+    background: red;
+    border: none;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Cards */
+
+.card {
+    border: 2px solid red;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: transform 0.2s linear, background-color 0.2s linear;
+    
+}
+
+#hidden {
+    background: rgba(11, 16, 35, 1) !important;
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+#inactive {
+    background: rgba(43, 55, 96, 1) !important;
+}
+
+.popup {
+    border: none;
+    display: none;
+    position: fixed;
+    background: #333;
+    border-radius: 20px;
+    background:  radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1)) !important;
+    padding: 20px;
+    text-align: center;
+}
+
+.playAgainBtn {
+    padding: 5px 30px;
+}
+
+.result {
+    margin: 0 0 20px 0;
+}
+
+

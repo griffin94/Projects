@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Memory game</title>
+</head>
+<body>
+    
+    <header class="loadWrapper">
+
+        <h1><span class="red">M</span>emory <span class="red">g</span>ame</h1>
+        <p>Play and train your memory!</p>
+    
+        <form method="" action="" class="setDimensions">
+            <label for="cols">Set number of columns</label>
+            <input type="number" min="2" step="2" placeholder="2, 4, 6, 8 ..."required id="cols">
+            <label for="rows">Set number of rows</label>
+            <input type="number" min="1" required id="rows">
+            <button type="submit">Play!</button>
+        </form>
+
+        <footer>Kamil Komarowski, Copyright &copy 2019, <br>All rights reserved </footer>
+
+    </header>
+    <div class="popup">
+        <h1>Congratulations!</h1>
+        <p class="result"></p>
+        <button class="playAgainBtn">Play again!</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
