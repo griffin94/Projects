@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fae4dd1145.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="weather">
+
+    <div class="col">
+        <header class="header">
+
+            <div class="row row--space-between">
+                <div class="col">
+                    <p class="header__date"></p>
+                    <p class="header__day"></p>
+                </div>
+                <p class="header__time"></p>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="row">
+                <span class="header__image fas fa-map-marker-alt fa-2x"></span>
+                <p class="header__city"></p>
+            </div>
+            
+            <div class="row">
+                <form class="header__form">
+                    <input type="text" class="header__input" id="city-name" placeholder="Provide city name here" autocomplete="off">
+                    <button class="header__button">Show weather</button>
+                </form>
+            </div>      
+        </header>
+
+        <main class="main">
+
+            <div class="row row--center">
+                <div class="main__temperature"></div>
+                <img class="main__icon" alt="weather-icon">
+            </div>
+
+            <div class="row row--center">
+                <div class="main__description"></div>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="row row--space-between">
+                <div class="col">
+                    <div class="row">
+                        <div class="main__pressure"></div>
+                    </div>
+                    <div class="row">
+                        <div class="main__wind"></div>
+                    </div>
+                    <div class="row">
+                        <div class="main__humidity"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="main__sunrise"></div>
+                    </div>
+                    <div class="row">
+                        <div class="main__sunset"></div>
+                    </div>
+                    <div class="row">
+                        <div class="main__visibility"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <section class="forecast"></section>
+
+    <div class="error-popup">
+        <div class="error-popup__box">
+            <div class="row row--flex-end">
+                <button class="error-popup__close-button">X</button>
+            </div>
+            <div class="row row--center">
+                <p class="error-popup__validation-text"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="Weather.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
