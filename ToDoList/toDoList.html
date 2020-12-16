@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="toDoList">
+      <div class="toDoList__header">
+        <h1>toDoList</h1>
+      </div>
+      <div class="toDoList__main">
+        <form>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="task-input"
+              class="input-wrapper__input"
+              placeholder="What shall I do today"
+              autocomplete="off"
+            />
+            <div class="input-wrapper__validation-output"></div>
+          </div>
+          <div class="buttons-container">
+            <button type="button" class="submit-button" id="add-task-btn">
+              Add task
+            </button>
+            <button type="button" class="remove-button" id="remove-task-btn">
+              Remove task
+            </button>
+          </div>
+          <div class="remove-task-btn-validation"></div>
+        </form>
+
+        <ul class="task-list">
+          It looks like you have a lazy day....
+        </ul>
+        <button id="sort-button" class="sort-button">Sort A-Z</button>
+        <button id="remove-all-button" class="remove-all-button">
+          Remove all
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
