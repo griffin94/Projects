@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Budżet domowy</title>
+</head>
+<body>
+    
+    <header class="header">
+        <span class="header__logo fa fa-money" aria-hidden="true"></span>
+        <h1 class="header__title">
+            Zarządzaj swoimi wydatkami!</br>
+            Bądź zawsze na plus!
+        </h1>
+    </header>
+
+    <div class="balance" id="balance"></div>
+
+    <main class="main-wrapper">
+        <section class="section">
+            <h2 class="section__title">Przychody</h2>
+            <form class="form" id="income-form">
+                <div class="text-field">
+                    <input class="text-field__input" id="income-name" type="text" placeholder="Nazwa przychodu" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" id="income-value" type="text" placeholder="Kwota" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <button class="button">Dodaj</button>
+            </form>
+            <ul class="list" id="income-list"></ul>
+            <p class="section__local-sum" id="income-sum"></p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Wydatki</h2>
+            <form class="form" id="expenses-form">
+                <div class="text-field">
+                    <input class="text-field__input" id="expenses-name" type="text" placeholder="Nazwa wydatku" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" id="expenses-value" type="text" placeholder="Kwota" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <button class="button">Dodaj</button>
+            </form>
+            <ul class="list" id="expenses-list"></ul>
+            <p class="section__local-sum" id="expenses-sum"></p>
+        </section>
+    </main>
+
+    <div class="popup">
+        <div class="popup__content-wrapper">
+            <div class="popup__navigation-bar">
+                <button class="popup__close-btn">
+                    <span class="fa fa-times" aria-hidden="true"></span>
+                </button>
+            </div>
+            <form class="form popup__form" id="edit-form">
+                <div class="text-field">
+                    <input class="text-field__input" id="edit-name" type="text" placeholder="Nazwa przychodu" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" id="edit-value" type="text" placeholder="Kwota" autocomplete="off">
+                    <div class="text-field__validation"></div>
+                </div>
+                <button class="button">
+                    <span class="fa fa-floppy-o" aria-hidden="true"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
